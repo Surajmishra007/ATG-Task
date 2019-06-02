@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dialog Box</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body style="background-color:grey">
+
+<div class="container">
+ 
+  <div id="abc" class="text-center">
+ 
+    <h2 style="color:white;">ATG Task 1</h2>
+    <h6  style="color:white;">For Multiple Ticket,Click Below</h6>
+  
+  <!-- Button to Open the dialog -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-backdrop="static" >Click Here</button>
+    
+  </div>
+  <!-- The Modal -->
+  <div class="modal fade " id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+		
+         <h4 class="modal-title"> <a href="Task1.html"><i style=" color:black;" class="fa fa-arrow-left"></i></a>&nbsp;Multiple Ticket</h4>
+        </div>
+        
+        <!-- Modal body -->
+    <form class="modal-content animate" action="#">
+        
+    <div class="container">
+       <b>1.</b>
+    <div class="form-group">
+       <label><b>Category?</b></label>
+       <input type="text" class="form-control" placeholder="Example: Entry,food, or parking etc." name="category" required>
+    </div>
+	<div class="form-group">
+      <label><b>Description</b></label>
+      <textarea class="form-control" placeholder="Description" rows="5" name="description"></textarea>
+    </div>
+    <div class="form-group">
+      <label><b>Ticket price for this category?</b></label>
+      <div class = "input-group">
+               
+               <div class = "input-group-btn">
+                  
+                 
+					  <select class="form-control">
+						 <option>₹</option>
+						 <option>$</option>
+						 <option>€</option>
+						 <option>¥</option>
+						</select> 
+				  
+                 
+               </div>
+               <input type = "number" class = "form-control" placeholder="Price per ticket" name="price" required>
+            </div>
+         </div>
+    </div> 
+	 <div class="modal-footer">
+	   <div class="col-md"><b>Total Cost: ₹0</b></div>
+          <button type="submit" class="btn btn-success" data-dismiss="modal">Done&#128076;</button>
+    </div>
+      
+    </div>
+	<!-- Modal footer -->
+   
+</form>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
