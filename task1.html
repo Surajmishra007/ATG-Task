@@ -11,14 +11,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   
 </head>
-<body style="background-color:grey">
+<body style="background-color:#DADADA">
 
 <div class="container">
  
   <div id="abc" class="text-center">
  
-    <h2 style="color:white;">ATG Task 1</h2>
-    <h6  style="color:white;">For Multiple Ticket,Click Below</h6>
+    
+    <h6>For Multiple Ticket,Click Below</h6>
   
   <!-- Button to Open the dialog -->
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-backdrop="static" >Click Here</button>
@@ -32,30 +32,32 @@
         <!-- Modal Header -->
         <div class="modal-header">
 		
-         <h4 class="modal-title"> <a href="Task1.html"><i style=" color:black;" class="fa fa-arrow-left"></i></a>&nbsp;Multiple Ticket</h4>
+         <h4 class="modal-title"> <i data-dismiss="modal" class="fa fa-arrow-left"></i>&nbsp;&nbsp;&nbsp;Multiple Ticket</h4>
         </div>
         
         <!-- Modal body -->
     <form class="modal-content animate" action="#">
-        
+	<br>
+	<div class="col-md font-weight-bold">1.</div>
+	<br>
     <div class="container">
-       <b>1.</b>
-    <div class="form-group">
-       <label><b>Category?</b></label>
-       <input type="text" class="form-control" placeholder="Example: Entry,food, or parking etc." name="category" required>
+       
+    <div class="form-group col-md ">
+       <label class="font-weight-bold">Category?</label>
+       <input type="text" class="form-control" placeholder="Example: Entry,food, or parking etc." name="category" style="width:300px; background-color:#DADADA" required>
+    </div><br>
+	<div class="form-group col-md ">
+      <label class="font-weight-bold">Description</label>
+      <textarea class="form-control" placeholder="Description" rows="2" style="width:350px;background-color:#DADADA"  name="description"></textarea>
     </div>
-	<div class="form-group">
-      <label><b>Description</b></label>
-      <textarea class="form-control" placeholder="Description" rows="5" name="description"></textarea>
-    </div>
-    <div class="form-group">
-      <label><b>Ticket price for this category?</b></label>
-      <div class = "input-group">
+    <div class="form-group col-md " >
+      <label class="font-weight-bold">Ticket price for this category?</label>
+      <div class = "input-group" style="width:200px;">
                
                <div class = "input-group-btn">
                   
                  
-					  <select class="form-control">
+					  <select class="form-control" style="background-color:#DADADA">
 						 <option>₹</option>
 						 <option>$</option>
 						 <option>€</option>
@@ -64,16 +66,19 @@
 				  
                  
                </div>
-               <input type = "number" class = "form-control" placeholder="Price per ticket" name="price" required>
+               <input type = "text" class = "form-control" style="background-color:#DADADA" placeholder="Price per ticket" name="price" required>
             </div>
          </div>
-    </div> 
-	 <div class="modal-footer">
-	   <div class="col-md"><b>Total Cost: ₹0</b></div>
-          <button type="submit" class="btn btn-success" data-dismiss="modal">Done&#128076;</button>
     </div>
-      
+	 
+	 <div class="modal-footer" style="margin-top:80px;">
+	  <div class="col font-weight-bold" style="margin-left:-16px;">Total Cost: ₹0</div>
+          <button type="submit" class="btn btn-success" data-dismiss="modal" >Done&nbsp;&#128076;&nbsp;&nbsp;</button>
+		  
     </div>
+    
+    </div>
+	
 	<!-- Modal footer -->
    
 </form>
